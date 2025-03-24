@@ -1,51 +1,114 @@
-# Custom project from Hilla
+# Verified Template
 
-This project can be used as a starting point to create your own Hilla application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+Um sistema web moderno para gerenciamento de provas e folhas-resposta, desenvolvido com React, TypeScript e Vaadin.
 
-## Running the application
+## 🚀 Sobre o Projeto
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+O Verified Template é uma aplicação web que permite criar e gerenciar folhas-resposta para provas, oferecendo uma interface intuitiva e moderna. O sistema foi desenvolvido utilizando tecnologias atuais e boas práticas de desenvolvimento.
 
-You can also import the project to your IDE of choice as you would with any
-Maven project.
+### Principais Funcionalidades
 
-## Deploying to Production
+- 📝 Criação de folhas-resposta personalizadas
+- 👥 Gerenciamento de estudantes
+- 📊 Importação de listas de estudantes via CSV
+- 🎨 Interface moderna e responsiva
+- 🔒 Sistema de autenticação
+- 🌐 Suporte a múltiplos idiomas
 
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
+## 🛠️ Tecnologias Utilizadas
 
-Once the JAR file is built, you can run it using
-`java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTE, replace
-`myapp-1.0-SNAPSHOT.jar` with the name of your jar).
+- **Frontend:**
+  - React 18
+  - TypeScript
+  - Vaadin React Components
+  - Vaadin Hilla
+  - React Router DOM
 
-## Project structure
+- **Backend:**
+  - Java
+  - Spring Boot
+  - Vaadin Hilla
 
-<table style="width:100%; text-align: left;">
-  <tr><th>Directory</th><th>Description</th></tr>
-  <tr><td><code>src/main/frontend/</code></td><td>Client-side source directory</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.html</code></td><td>HTML template</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.ts</code></td><td>Frontend 
-entrypoint, bootstraps a React application</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>routes.tsx</code></td><td>React Router routes definition</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>MainLayout.tsx</code></td><td>Main 
-layout component, contains the navigation menu, uses <a href="https://hilla.dev/docs/react/components/app-layout">
-App Layout</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>views/</code></td><td>UI view 
-components</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>themes/</code></td><td>Custom  
-CSS styles</td></tr>
-  <tr><td><code>src/main/java/&lt;groupId&gt;/</code></td><td>Server-side 
-source directory, contains the server-side Java views</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>Application.java</code></td><td>Server entry-point</td></tr>
-</table>
+## 📋 Pré-requisitos
 
-## Useful links
+- Node.js (versão LTS recomendada)
+- Java JDK 17 ou superior
+- Maven
 
-- Read the documentation at [hilla.dev/docs](https://hilla.dev/docs/).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Forum](https://vaadin.com/forum).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin/hilla).
+## 🔧 Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/verified-template.git
+```
+
+2. Entre no diretório do projeto:
+```bash
+cd verified-template
+```
+
+3. Instale as dependências do frontend:
+```bash
+npm install
+```
+
+4. Execute o projeto:
+```bash
+npm start
+```
+
+O projeto estará disponível em `http://localhost:8080`
+
+## 📁 Estrutura do Projeto
+
+```
+verified-template/
+├── src/
+│   ├── main/
+│   │   ├── frontend/
+│   │   │   ├── static/
+│   │   │   │   ├── components/
+│   │   │   │   ├── utils/
+│   │   │   │   └── ts/
+│   │   │   └── views/
+│   │   └── java/
+│   └── test/
+└── package.json
+```
+
+## 🎯 Como Usar
+
+1. **Criar Folhas-Resposta:**
+   - Acesse a seção "Criar Folhas-Respostas"
+   - Preencha o título da prova
+   - Adicione estudantes manualmente ou importe via CSV
+   - Configure as opções desejadas
+
+2. **Importar Lista de Estudantes:**
+   - Prepare um arquivo CSV com os dados dos estudantes
+   - Clique em "Importar Lista"
+   - Selecione o arquivo CSV
+   - Confirme a importação
+
+3. **Gerenciar Estudantes:**
+   - Adicione estudantes individualmente
+   - Remova estudantes da lista
+   - Limpe a lista completa quando necessário
+
+## 🤝 Contribuindo
+
+1. Faça um Fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Autores
+
+- Luís Henrique - [@LuisLH64](https://github.com/LuisLH64)
+
+
