@@ -1,0 +1,1091 @@
+2025-03-24T13:31:33.836-03:00  INFO 22984 --- [restartedMain] com.verified.template.Application        : Starting Application using Java 21.0.3 with PID 22984 (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\target\classes started by PC-WEINZER in c:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template)
+2025-03-24T13:31:33.850-03:00  INFO 22984 --- [restartedMain] com.verified.template.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T13:31:33.913-03:00  INFO 22984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-24T13:31:33.916-03:00  INFO 22984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-24T13:31:34.677-03:00  INFO 22984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24T13:31:34.806-03:00  INFO 22984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
+2025-03-24T13:31:35.505-03:00  INFO 22984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-24T13:31:35.524-03:00  INFO 22984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-24T13:31:35.524-03:00  INFO 22984 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-24T13:31:35.612-03:00  INFO 22984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-24T13:31:35.613-03:00  INFO 22984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1696 ms
+2025-03-24T13:31:35.817-03:00  INFO 22984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing AtmosphereFramework
+2025-03-24T13:31:37.048-03:00  INFO 22984 --- [restartedMain] c.v.f.s.VaadinServletContextInitializer  : Search for subclasses and classes with annotations took 1062 ms
+2025-03-24T13:31:37.572-03:00  INFO 22984 --- [restartedMain] c.v.b.d.startup.DevModeStartupListener   : Starting dev-mode updaters in C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template folder.
+2025-03-24T13:31:37.652-03:00  INFO 22984 --- [restartedMain] c.v.f.s.f.s.FullDependenciesScanner      : Visited 110 classes. Took 37 ms.
+2025-03-24T13:31:37.987-03:00  INFO 22984 --- [ForkJoinPool.commonPool-worker-2] c.v.f.s.frontend.TaskUpdatePackages      : Skipping `npm install` because the frontend packages are already installed in the folder 'C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules' and the hash in the file 'C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\.vaadin\vaadin.json' is the same as in 'package.json'
+2025-03-24T13:31:38.014-03:00  INFO 22984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24T13:31:38.099-03:00  INFO 22984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-03-24T13:31:38.163-03:00  INFO 22984 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-24T13:31:38.634-03:00  INFO 22984 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24T13:31:38.678-03:00  INFO 22984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-24T13:31:39.743-03:00  WARN 22984 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08001
+2025-03-24T13:31:39.744-03:00 ERROR 22984 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2025-03-24T13:31:39.745-03:00  WARN 22984 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.verified.template.Application.main(Application.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.4.jar:42.7.4]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	... 38 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268) ~[postgresql-42.7.4.jar:42.7.4]
+	... 52 common frames omitted
+
+2025-03-24T13:31:39.753-03:00 ERROR 22984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-03-24T13:31:39.754-03:00  WARN 22984 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-03-24T13:31:39.760-03:00  INFO 22984 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-24T13:31:39.765-03:00  WARN 22984 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [JNA Cleaner] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.sun.jna.internal.Cleaner$CleanerThread.run(Cleaner.java:154)
+2025-03-24T13:31:39.779-03:00  INFO 22984 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-24T13:31:39.827-03:00 ERROR 22984 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.verified.template.Application.main(Application.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	... 18 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:392) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	... 33 common frames omitted
+
+2025-03-24T13:34:06.155-03:00  INFO 26712 --- [restartedMain] com.verified.template.Application        : Starting Application using Java 21.0.3 with PID 26712 (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\target\classes started by PC-WEINZER in c:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template)
+2025-03-24T13:34:06.160-03:00  INFO 26712 --- [restartedMain] com.verified.template.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T13:34:06.233-03:00  INFO 26712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-24T13:34:06.233-03:00  INFO 26712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-24T13:34:07.035-03:00  INFO 26712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24T13:34:07.192-03:00  INFO 26712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 1 JPA repository interface.
+2025-03-24T13:34:07.987-03:00  INFO 26712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-24T13:34:08.005-03:00  INFO 26712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-24T13:34:08.005-03:00  INFO 26712 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-24T13:34:08.093-03:00  INFO 26712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-24T13:34:08.093-03:00  INFO 26712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1859 ms
+2025-03-24T13:34:08.287-03:00  INFO 26712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing AtmosphereFramework
+2025-03-24T13:34:09.383-03:00  INFO 26712 --- [restartedMain] c.v.f.s.VaadinServletContextInitializer  : Search for subclasses and classes with annotations took 894 ms
+2025-03-24T13:34:09.784-03:00  INFO 26712 --- [restartedMain] c.v.b.d.startup.DevModeStartupListener   : Starting dev-mode updaters in C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template folder.
+2025-03-24T13:34:09.848-03:00  INFO 26712 --- [restartedMain] c.v.f.s.f.s.FullDependenciesScanner      : Visited 110 classes. Took 28 ms.
+2025-03-24T13:34:10.115-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-2] c.v.f.s.frontend.TaskUpdatePackages      : Skipping `npm install` because the frontend packages are already installed in the folder 'C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules' and the hash in the file 'C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\.vaadin\vaadin.json' is the same as in 'package.json'
+2025-03-24T13:34:10.159-03:00  INFO 26712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24T13:34:10.224-03:00  INFO 26712 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-03-24T13:34:10.260-03:00  INFO 26712 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-24T13:34:10.534-03:00  INFO 26712 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24T13:34:10.569-03:00  INFO 26712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-24T13:34:10.755-03:00  INFO 26712 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e35b697
+2025-03-24T13:34:10.757-03:00  INFO 26712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-24T13:34:10.853-03:00  INFO 26712 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24T13:34:11.769-03:00  INFO 26712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24T13:34:11.853-03:00  WARN 26712 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists responses.enterprise alter column logo set data type varchar(255)" via JDBC [ERROR: value too long for type character varying(255)]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists responses.enterprise alter column logo set data type varchar(255)" via JDBC [ERROR: value too long for type character varying(255)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:334) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.verified.template.Application.main(Application.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(255)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.4.jar:42.7.4]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	... 40 common frames omitted
+
+2025-03-24T13:34:11.874-03:00  INFO 26712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24T13:34:12.356-03:00  INFO 26712 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-24T13:34:12.541-03:00  WARN 26712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24T13:34:13.048-03:00  INFO 26712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-24T13:34:15.383-03:00  INFO 26712 --- [restartedMain] c.v.f.s.DefaultDeploymentConfiguration   : 
+Vaadin is running in DEVELOPMENT mode - do not use for production deployments.
+2025-03-24T13:34:15.405-03:00  INFO 26712 --- [restartedMain] c.vaadin.flow.spring.SpringInstantiator  : The number of beans implementing 'I18NProvider' is 0. Cannot use Spring beans for I18N, falling back to the default behavior
+2025-03-24T13:34:15.609-03:00  INFO 26712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-24T13:34:15.618-03:00  INFO 26712 --- [restartedMain] com.verified.template.Application        : Started Application in 9.832 seconds (process running for 10.622)
+2025-03-24T13:34:16.347-03:00  INFO 26712 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-24T13:34:16.347-03:00  INFO 26712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-24T13:34:16.349-03:00  INFO 26712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-24T13:34:16.901-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-2] c.v.f.s.frontend.TaskCopyFrontendFiles   : Copying frontend resources from jar files ...
+2025-03-24T13:34:16.989-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-2] c.v.f.s.frontend.TaskCopyFrontendFiles   : Visited 22 resources. Took 88 ms.
+2025-03-24T13:34:17.161-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-2] c.v.b.devserver.AbstractDevServerRunner  : Starting Vite
+2025-03-24T13:34:19.048-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-2] c.v.b.devserver.AbstractDevServerRunner  : Running Vite to compile frontend resources. This may take a moment, please stand by...
+2025-03-24T13:34:21.905-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:34:21.906-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   VITE v6.0.3  ready in 2803 ms
+2025-03-24T13:34:21.906-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-2] c.v.b.devserver.AbstractDevServerRunner  : Started Vite. Time: 4744ms
+2025-03-24T13:34:21.906-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:34:21.906-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   ➜  Local:   http://127.0.0.1:58592/VAADIN/
+2025-03-24T13:34:21.916-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-1] c.v.b.d.DevModeHandlerManagerImpl        : Application running at http://localhost:8080/
+2025-03-24T13:34:26.308-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:34:26.308-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:41:01.262-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:41:01.263-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:42:01.435-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:42:01.435-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:50:57.979-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:50:57.980-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:51:26.744-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:51:26.744-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:51:33.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:51:33.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:53:12.700-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:53:12 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:53:13.786-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:53:13.786-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:55:04.889-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:04.889-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:55:06.352-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:06.352-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Module '"./dialog-utils"' has no exported member 'useDialog'.
+2025-03-24T13:55:06.353-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:1:10
+2025-03-24T13:55:06.353-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:06.353-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 1 | import { useDialog } from './dialog-utils';
+2025-03-24T13:55:06.353-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |          ^^^^^^^^^
+2025-03-24T13:55:06.353-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 |
+2025-03-24T13:55:06.353-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | export function useDialogFunctions() {
+2025-03-24T13:55:06.354-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 |   const { showDialog, showConfirm } = useDialog();
+2025-03-24T13:55:06.354-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:06.354-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T13:55:21.081-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:55:21 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:55:22.110-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:22.111-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Module '"./dialog-utils"' has no exported member 'useDialog'.
+2025-03-24T13:55:22.111-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:1:10
+2025-03-24T13:55:22.111-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:22.111-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 1 | import { useDialog } from './dialog-utils';
+2025-03-24T13:55:22.111-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |          ^^^^^^^^^
+2025-03-24T13:55:22.111-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 |
+2025-03-24T13:55:22.112-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | export function useDialogFunctions() {
+2025-03-24T13:55:22.112-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 |   const { showDialog, showConfirm } = useDialog();
+2025-03-24T13:55:22.112-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:22.112-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T13:55:42.474-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:55:42 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:55:43.306-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:43.307-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Module '"./dialog-utils"' has no exported member 'useDialog'.
+2025-03-24T13:55:43.307-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:1:10
+2025-03-24T13:55:43.307-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:43.307-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 1 | import { useDialog } from './dialog-utils';
+2025-03-24T13:55:43.307-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |          ^^^^^^^^^
+2025-03-24T13:55:43.307-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 |
+2025-03-24T13:55:43.307-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | export function useDialogFunctions() {
+2025-03-24T13:55:43.308-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 |   const { showDialog, showConfirm } = useDialog();
+2025-03-24T13:55:43.308-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:55:43.308-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T13:57:35.906-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:57:35 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:57:35.907-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:57:35 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:57:43.026-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:57:43 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:57:43.032-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:57:43 [vite] (client) Pre-transform error: Failed to load url /static/utils/dialog-utils.ts (resolved id: C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-utils.ts) in C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts. Does the file exist?
+2025-03-24T13:57:43.455-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:57:43.455-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  File 'C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-utils.tsx' is not a module.
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:1:27
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 1 | import { useDialog } from './dialog-utils';
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |                           ^^^^^^^^^^^^^^^^
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 |
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | export function useDialogFunctions() {
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 |   const { showDialog, showConfirm } = useDialog();
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:57:43.456-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T13:57:58.102-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:57:58 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:57:58.470-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:57:58.470-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Cannot find name 'useDialog'.
+2025-03-24T13:57:58.470-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:4:39
+2025-03-24T13:57:58.470-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:57:58.470-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 |
+2025-03-24T13:57:58.470-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | export function useDialogFunctions() {
+2025-03-24T13:57:58.471-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 4 |   const { showDialog, showConfirm } = useDialog();
+2025-03-24T13:57:58.471-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |                                       ^^^^^^^^^
+2025-03-24T13:57:58.471-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     5 |
+2025-03-24T13:57:58.471-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     6 |   const showValidationError = (message: string) => {
+2025-03-24T13:57:58.471-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     7 |     showDialog(message, {
+2025-03-24T13:57:58.471-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:57:58.471-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T13:58:06.776-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:58:06 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:58:06.939-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:58:06 [vite] (client) page reload static/utils/dialog-functions.ts
+2025-03-24T13:58:06.970-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:58:06 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:58:07.095-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:58:07 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:58:07.107-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:58:07 [vite] (client) Pre-transform error: Failed to load url /static/utils/dialog-utils.tsx (resolved id: C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-utils.tsx) in C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/views/create/create-sheet.tsx. Does the file exist?
+2025-03-24T13:58:08.233-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:58:08.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Cannot find module 'Frontend/static/utils/dialog-utils' or its corresponding type declarations.
+2025-03-24T13:58:08.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/views/create/create-sheet.tsx:9:33
+2025-03-24T13:58:08.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:58:08.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :      7 | import { importStudentsFromCSV, isValidCSVFile } from 'Frontend/static/ts/create/csv-importer';
+2025-03-24T13:58:08.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :      8 |
+2025-03-24T13:58:08.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   >  9 | import { showAlertDialog } from 'Frontend/static/utils/dialog-utils';
+2025-03-24T13:58:08.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T13:58:08.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     10 |
+2025-03-24T13:58:08.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     11 | export const config: ViewConfig = {
+2025-03-24T13:58:08.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     12 |   menu: { order: 2, icon: 'line-awesome/svg/file-invoice-solid.svg' },
+2025-03-24T13:58:08.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:58:08.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T13:58:13.879-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:58:13 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:58:14.681-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:58:14.681-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Cannot find name 'showAlertDialog'. Did you mean 'showDialog'?
+2025-03-24T13:58:14.681-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/views/create/create-sheet.tsx:74:5
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     72 |     // setDialogOpen(true);
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     73 |
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 74 |     showAlertDialog(message, title);
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |     ^^^^^^^^^^^^^^^
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     75 |   }
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     76 |   
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     77 |   // Função para lidar com o clique no botão de importação
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:58:14.682-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T13:58:24.905-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:58:24 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T13:58:25.694-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:58:25.694-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:59:58.247-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:59:58 [vite] (client) page reload static/utils/dialog-functions.ts
+2025-03-24T13:59:58.780-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T13:59:58.780-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T13:59:59.902-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 13:59:59 [vite] (client) page reload static/utils/dialog-functions.ts
+2025-03-24T14:00:00.594-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Argument of type '"vaadin-dialog-close"' is not assignable to parameter of type '"input" | "progress" | "select" | "error" | "opened-changed" | "closed" | "resize" | "dragged" | "fullscreenchange" | "fullscreenerror" | "abort" | "animationcancel" | "animationend" | ... 94 more ... | "wheel"'.
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:37:29
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     35 |   
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     36 |   if (options?.onClose) {
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 37 |     dialog.addEventListener('vaadin-dialog-close', options.onClose);
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                             ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     38 |   }
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     39 |   
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     40 |   document.body.appendChild(dialog);
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:00.595-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Argument of type '"vaadin-dialog-close"' is not assignable to parameter of type '"input" | "progress" | "select" | "error" | "opened-changed" | "closed" | "resize" | "dragged" | "fullscreenchange" | "fullscreenerror" | "abort" | "animationcancel" | "animationend" | ... 94 more ... | "wheel"'.
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:67:27
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     65 |   dialog.opened = true;
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     66 |   
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 67 |   dialog.addEventListener('vaadin-dialog-close', () => {
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                           ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     68 |     onConfirm();
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     69 |     if (options?.onClose) {
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     70 |       options.onClose();
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:00.596-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 2 errors. Watching for file changes.
+2025-03-24T14:00:26.224-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:00:26 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:00:27.163-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Argument of type '"vaadin-dialog-close"' is not assignable to parameter of type '"input" | "progress" | "select" | "error" | "opened-changed" | "closed" | "resize" | "dragged" | "fullscreenchange" | "fullscreenerror" | "abort" | "animationcancel" | "animationend" | ... 94 more ... | "wheel"'.
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:37:29
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     35 |   
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     36 |   if (options?.onClose) {
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 37 |     dialog.addEventListener('vaadin-dialog-close', options.onClose);
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                             ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     38 |   }
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     39 |   
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     40 |   document.body.appendChild(dialog);
+2025-03-24T14:00:27.164-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Argument of type '"vaadin-dialog-close"' is not assignable to parameter of type '"input" | "progress" | "select" | "error" | "opened-changed" | "closed" | "resize" | "dragged" | "fullscreenchange" | "fullscreenerror" | "abort" | "animationcancel" | "animationend" | ... 94 more ... | "wheel"'.
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:67:27
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     65 |   dialog.opened = true;
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     66 |   
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 67 |   dialog.addEventListener('vaadin-dialog-close', () => {
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                           ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:00:27.165-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     68 |     onConfirm();
+2025-03-24T14:00:27.166-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     69 |     if (options?.onClose) {
+2025-03-24T14:00:27.166-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     70 |       options.onClose();
+2025-03-24T14:00:27.166-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:00:27.166-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 2 errors. Watching for file changes.
+2025-03-24T14:02:03.000-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:02:03 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:02:03.002-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:02:03 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:02:13.391-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:02:13 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:02:14.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Argument of type '"vaadin-dialog-close"' is not assignable to parameter of type '"input" | "progress" | "select" | "error" | "opened-changed" | "closed" | "resize" | "dragged" | "fullscreenchange" | "fullscreenerror" | "abort" | "animationcancel" | "animationend" | ... 94 more ... | "wheel"'.
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:37:29
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     35 |   
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     36 |   if (options?.onClose) {
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 37 |     dialog.addEventListener('vaadin-dialog-close', options.onClose);
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                             ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     38 |   }
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     39 |   
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     40 |   document.body.appendChild(dialog);
+2025-03-24T14:02:14.235-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Argument of type '"vaadin-dialog-close"' is not assignable to parameter of type '"input" | "progress" | "select" | "error" | "opened-changed" | "closed" | "resize" | "dragged" | "fullscreenchange" | "fullscreenerror" | "abort" | "animationcancel" | "animationend" | ... 94 more ... | "wheel"'.
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:67:27
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     65 |   dialog.opened = true;
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     66 |   
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 67 |   dialog.addEventListener('vaadin-dialog-close', () => {
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                           ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     68 |     onConfirm();
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     69 |     if (options?.onClose) {
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     70 |       options.onClose();
+2025-03-24T14:02:14.236-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:02:14.237-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 2 errors. Watching for file changes.
+2025-03-24T14:02:57.198-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:02:57 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:02:57.715-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:02:57.715-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:03:08.591-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:03:08 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:06:35.976-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:06:35 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:06:36.506-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:06:36.506-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:07:07.205-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:07:07 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:08:06.598-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:08:06 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:08:07.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Property 'theme' does not exist on type 'Button'.
+2025-03-24T14:08:07.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:37:17
+2025-03-24T14:08:07.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.123-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     35 |   
+2025-03-24T14:08:07.123-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     36 |   const confirmButton = document.createElement('vaadin-button');
+2025-03-24T14:08:07.123-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 37 |   confirmButton.theme = `primary ${getTheme(options?.type || 'info')}`;
+2025-03-24T14:08:07.123-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                 ^^^^^
+2025-03-24T14:08:07.123-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     38 |   confirmButton.textContent = options?.confirmText || 'OK';
+2025-03-24T14:08:07.123-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     39 |   confirmButton.onclick = () => dialog.close();
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     40 |   
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Property 'close' does not exist on type 'Dialog'. Did you mean 'closest'?
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:39:40
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     37 |   confirmButton.theme = `primary ${getTheme(options?.type || 'info')}`;
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     38 |   confirmButton.textContent = options?.confirmText || 'OK';
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 39 |   confirmButton.onclick = () => dialog.close();
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                                        ^^^^^
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     40 |   
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     41 |   footer.appendChild(confirmButton);
+2025-03-24T14:08:07.124-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     42 |   
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Property 'close' does not exist on type 'Dialog'. Did you mean 'closest'?
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:82:39
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     80 |   const cancelButton = document.createElement('vaadin-button');
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     81 |   cancelButton.textContent = options?.cancelText || 'Cancelar';
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 82 |   cancelButton.onclick = () => dialog.close();
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                                       ^^^^^
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     83 |   
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     84 |   const confirmButton = document.createElement('vaadin-button');
+2025-03-24T14:08:07.125-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     85 |   confirmButton.theme = `primary ${getTheme('confirm')}`;
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Property 'theme' does not exist on type 'Button'.
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:85:17
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     83 |   
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     84 |   const confirmButton = document.createElement('vaadin-button');
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 85 |   confirmButton.theme = `primary ${getTheme('confirm')}`;
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |                 ^^^^^
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     86 |   confirmButton.textContent = options?.confirmText || 'Confirmar';
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     87 |   confirmButton.onclick = () => {
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     88 |     dialog.close();
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Property 'close' does not exist on type 'Dialog'. Did you mean 'closest'?
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-functions.ts:88:12
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.126-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     86 |   confirmButton.textContent = options?.confirmText || 'Confirmar';
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     87 |   confirmButton.onclick = () => {
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 88 |     dialog.close();
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |            ^^^^^
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     89 |     onConfirm();
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     90 |   };
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     91 |   
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:08:07.127-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 5 errors. Watching for file changes.
+2025-03-24T14:09:21.530-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:09:21 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:09:21.647-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:09:21 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:09:21.783-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:09:21 [vite] (client) page reload static/utils/dialog-functions.ts
+2025-03-24T14:09:23.372-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:09:23.372-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:10:49.238-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:10:49 [vite] (client) page reload static/utils/dialog-utils.tsx
+2025-03-24T14:10:49.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:10:49.753-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:10:50.868-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:10:50 [vite] (client) page reload static/utils/dialog-utils.tsx
+2025-03-24T14:10:51.630-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:10:51.630-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Type '{ children: Element[]; headerTitle: string; opened: boolean; onOpenedChanged: ({ detail }: DialogOpenedChangedEvent) => false | void; style: { width: string; }; }' is not assignable to type 'IntrinsicAttributes & Partial<Omit<Partial<ThemedWebComponentProps<Dialog, Readonly<{ onClosed: EventName<DialogClosedEvent>; onDragged: EventName<DialogDraggedEvent>; onResize: EventName<...>; onOpenedChanged: EventName<...>; }>>>, "children" | ... 259 more ... | "footerRenderer">> & Readonly<...> & RefAttributes<....'.
+2025-03-24T14:10:51.630-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   Property 'style' does not exist on type 'IntrinsicAttributes & Partial<Omit<Partial<ThemedWebComponentProps<Dialog, Readonly<{ onClosed: EventName<DialogClosedEvent>; onDragged: EventName<DialogDraggedEvent>; onResize: EventName<...>; onOpenedChanged: EventName<...>; }>>>, "children" | ... 259 more ... | "footerRenderer">> & Readonly<...> & RefAttributes<....'.
+2025-03-24T14:10:51.630-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/static/utils/dialog-utils.tsx:127:9
+2025-03-24T14:10:51.630-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     125 |         opened={state.open}
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     126 |         onOpenedChanged={({ detail }) => !detail.value && closeDialog()}
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 127 |         style={{ width: state.width }}
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         |         ^^^^^
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     128 |       >
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     129 |         <div style={{ 
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     130 |           display: 'flex', 
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:10:51.631-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:10:59.024-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:10:59 [vite] (client) page reload static/utils/dialog-utils.tsx
+2025-03-24T14:10:59.734-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:10:59.734-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:11:04.530-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:11:04.530-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Cannot find module '@vaadin/hilla-file-router' or its corresponding type declarations.
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/index.tsx:3:28
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     1 | import React from 'react';
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 | import ReactDOM from 'react-dom/client';
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 3 | import { FileRouter } from '@vaadin/hilla-file-router';
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 | import './index.css';
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     5 | import { DialogProvider } from './static/utils/dialog-utils';
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     6 |
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:11:06.007-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:12:52.756-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:12:52.756-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:13:13.172-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:13:13 [vite] (client) page reload static/utils/dialog-utils.tsx
+2025-03-24T14:14:02.611-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:14:02 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:14:03.601-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:14:03.601-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:14:15.205-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:14:15 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Type '{ label: string; value: string; onValueChanged: ({ detail }: CustomEvent<{ value: string; }>) => void; }' is not assignable to type 'IntrinsicAttributes & Props'.
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   Property 'value' does not exist on type 'IntrinsicAttributes & Props'.
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/views/create/create-sheet.tsx:135:13
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     133 |           <DatePickerI18n
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     134 |             label="Data"
+2025-03-24T14:14:15.981-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 135 |             value={date}
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         |             ^^^^^
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     136 |             onValueChanged={({ detail }) => setDate(detail.value)}
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     137 |           />
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     138 |           <Button theme="primary" onClick={addStudent}>
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Type '({ item }: GridItemModel<Student>) => JSX.Element' is not assignable to type 'ComponentType<Readonly<{ item: any; model: GridItemModel<any>; original: GridColumn<any>; }>> | null | undefined'.
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   Type '({ item }: GridItemModel<Student>) => JSX.Element' is not assignable to type 'FunctionComponent<Readonly<{ item: any; model: GridItemModel<any>; original: GridColumn<any>; }>>'.
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     Types of parameters '__0' and 'props' are incompatible.
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       Property 'index' is missing in type 'Readonly<{ item: any; model: GridItemModel<any>; original: GridColumn<any>; }>' but required in type 'GridItemModel<Student>'.
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/views/create/create-sheet.tsx:168:13
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     166 |           <GridColumn path="date" header="Data" />
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     167 |           <GridColumn>
+2025-03-24T14:14:15.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 168 |             {({ item }: GridItemModel<Student>) => (
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 169 |               <Button
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 170 |                 theme="error"
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 171 |                 onClick={() => {
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 172 |                   showConfirm(
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 173 |                     'Tem certeza que deseja remover este aluno?',
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 174 |                     () => removeStudent(students.indexOf(item)),
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 175 |                     {
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 176 |                       title: 'Confirmar Exclusão',
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 177 |                       confirmText: 'Sim, remover',
+2025-03-24T14:14:15.984-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 178 |                       cancelText: 'Não, cancelar'
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 179 |                     }
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 180 |                   );
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 181 |                 }}
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 182 |               >
+2025-03-24T14:14:15.985-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 183 |                 <Icon icon="vaadin:trash" />
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 184 |               </Button>
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 185 |             )}
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :         | ^^^^^^^^^^^^^^^
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     186 |           </GridColumn>
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     187 |         </Grid>
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     188 |       </VerticalLayout>
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:14:15.986-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 2 errors. Watching for file changes.
+2025-03-24T14:14:26.425-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:14:26 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:14:27.220-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:14:27.220-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:15:47.543-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:15:47 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:16:21.743-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:21.743-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:16:23.286-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:23.286-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Cannot find module '@vaadin/hilla-file-router' or its corresponding type declarations.
+2025-03-24T14:16:23.286-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/index.tsx:1:28
+2025-03-24T14:16:23.286-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:23.286-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 1 | import { FileRouter } from '@vaadin/hilla-file-router';
+2025-03-24T14:16:23.287-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:16:23.287-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 | import { DialogProvider } from 'Frontend/static/utils/dialog-utils';
+2025-03-24T14:16:23.287-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 |
+2025-03-24T14:16:23.287-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 | export default function App() {
+2025-03-24T14:16:23.287-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:23.287-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:16:27.330-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Cannot find module '@vaadin/hilla-file-router/index.js' or its corresponding type declarations.
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/index.tsx:1:28
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 1 | import { FileRouter } from '@vaadin/hilla-file-router/index.js';
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     2 | import { DialogProvider } from 'Frontend/static/utils/dialog-utils';
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 |
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 | export default function App() {
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:27.331-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Cannot find module '@vaadin/hilla-file-router' or its corresponding type declarations.
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/index.tsx:2:28
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     1 | import React from 'react';
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 2 | import { FileRouter } from '@vaadin/hilla-file-router';
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | import { DialogProvider } from 'Frontend/static/utils/dialog-utils';
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 |
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     5 | export default function App() {
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:16:46.269-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:17:06.121-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:06.121-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Module '"@vaadin/hilla-file-router/types.js"' has no exported member 'FileRouter'.
+2025-03-24T14:17:06.121-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/index.tsx:2:10
+2025-03-24T14:17:06.121-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:06.121-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     1 | import React from 'react';
+2025-03-24T14:17:06.121-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 2 | import { FileRouter } from '@vaadin/hilla-file-router/types.js';
+2025-03-24T14:17:06.121-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |          ^^^^^^^^^^
+2025-03-24T14:17:06.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | import { DialogProvider } from 'Frontend/static/utils/dialog-utils';
+2025-03-24T14:17:06.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 |
+2025-03-24T14:17:06.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     5 | export default function App() {
+2025-03-24T14:17:06.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:06.122-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:17:22.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:22.982-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  Module '"@vaadin/hilla-file-router/runtime.js"' has no exported member 'FileRouter'.
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/index.tsx:2:10
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     1 | import React from 'react';
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 2 | import { FileRouter } from '@vaadin/hilla-file-router/runtime.js';
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       |          ^^^^^^^^^^
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     3 | import { DialogProvider } from 'Frontend/static/utils/dialog-utils';
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     4 |
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     5 | export default function App() {
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:22.983-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:17:41.351-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:41.351-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:17:47.002-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:47.002-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:17:48.615-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:17:48.615-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:18:38.730-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:18:38.730-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:19:09.442-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:19:09.442-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:19:10.473-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:19:10.473-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:19:15.704-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:19:15.704-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:19:58.473-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:19:58 [vite] (client) hmr update /views/@layout.tsx
+2025-03-24T14:19:59.244-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:19:59.244-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:20:56.734-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:20:56 [vite] (client) hmr update /views/@layout.tsx
+2025-03-24T14:21:08.731-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:21:08 [vite] (client) hmr update /views/@layout.tsx
+2025-03-24T14:21:08.748-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:21:08 [vite] Internal server error: C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\src\main\frontend\views\@layout.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (47:4)
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   45 |     </DialogProvider>
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   46 |     
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : > 47 |     <AppLayout primarySection="drawer">
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :      |     ^
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   48 |       <div slot="drawer" className="flex flex-col justify-between h-full p-m">
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   49 |         <header className="flex flex-col gap-m">
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   50 |           {/* <span className="font-semibold text-l">Verified</span> */}
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   Plugin: vite:react-babel
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   File: C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/views/@layout.tsx:47:4
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   45 |      </DialogProvider>
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   46 |      
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   47 |      <AppLayout primarySection="drawer">
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :      |      ^
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   48 |        <div slot="drawer" className="flex flex-col justify-between h-full p-m">
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   49 |          <header className="flex flex-col gap-m">
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at constructor (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:359:19)
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.raise (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:3266:19)
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.jsxParseElementAt (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:6796:18)
+2025-03-24T14:21:08.749-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.jsxParseElement (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:6803:17)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExprAtom (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:6813:19)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExprSubscripts (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10615:23)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseUpdate (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10600:21)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeUnary (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10580:23)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeUnary (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:9489:18)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10434:61)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExprOps (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10439:23)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeConditional (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10416:23)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeAssign (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10379:21)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:9427:39
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.tryParse (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:3604:20)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeAssign (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:9427:18)
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10349:39
+2025-03-24T14:21:08.750-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.allowInAnd (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:11951:12)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10349:17)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:11210:28)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExprAtom (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10863:23)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExprAtom (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:6818:20)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExprSubscripts (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10615:23)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseUpdate (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10600:21)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeUnary (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10580:23)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeUnary (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:9489:18)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10434:61)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExprOps (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10439:23)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeConditional (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10416:23)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeAssign (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10379:21)
+2025-03-24T14:21:08.751-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseMaybeAssign (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:9438:20)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExpressionBase (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10333:23)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10329:39
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.allowInAnd (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:11946:16)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExpression (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:10329:17)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseReturnStatement (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12636:28)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseStatementContent (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12288:21)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseStatementContent (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:9163:18)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseStatementLike (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12257:17)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseStatementListItem (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12237:17)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12810:61)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseBlockBody (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12803:10)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseBlock (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12791:10)
+2025-03-24T14:21:08.752-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseFunctionBody (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:11634:24)
+2025-03-24T14:21:08.753-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:11620:10)
+2025-03-24T14:21:08.753-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:8904:18)
+2025-03-24T14:21:08.753-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12935:12
+2025-03-24T14:21:08.753-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:11928:14)
+2025-03-24T14:21:08.753-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseFunction (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:12934:10)
+2025-03-24T14:21:08.753-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :       at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\@babel\parser\lib\index.js:13389:19)
+2025-03-24T14:21:09.037-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  ERROR(TypeScript)  JSX expressions must have one parent element.
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :  FILE  C:/Users/PC-WEINZER/Desktop/Devs/Projetos/verified template/verified template/src/main/frontend/views/@layout.tsx:43:5
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     41 |
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     42 |   return (
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 43 |     <DialogProvider>
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        |     ^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 44 |       <FileRouter />
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 45 |     </DialogProvider>
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 46 |     
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 47 |     <AppLayout primarySection="drawer">
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 48 |       <div slot="drawer" className="flex flex-col justify-between h-full p-m">
+2025-03-24T14:21:09.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 49 |         <header className="flex flex-col gap-m">
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 50 |           {/* <span className="font-semibold text-l">Verified</span> */}
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 51 |           {logo ? (
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 52 |             <img 
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 53 |               src={logo} 
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 54 |               loading="lazy" 
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 55 |               alt="Empresa Logo"
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 56 |             />
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.039-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 57 |           ) : (
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 58 |             <p>Carregando logo...</p>
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 59 |           )}
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 60 |           <SideNav onNavigate={({ path }) => navigate(path!)} location={location}>
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 61 |             {createMenuItems().map(({ to, title, icon }) => (
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 62 |               <SideNavItem path={to} key={to}>
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 63 |                 {icon ? <Icon src={icon} slot="prefix"></Icon> : <></>}
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 64 |                 {title}
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 65 |               </SideNavItem>
+2025-03-24T14:21:09.040-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 66 |             ))}
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 67 |           </SideNav>
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 68 |         </header>
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 69 |       </div>
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 70 |
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 71 |       <DrawerToggle slot="navbar" aria-label="Menu toggle"></DrawerToggle>
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.041-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 72 |       {/* <h1 slot="navbar" className="text-l m-0">
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 73 |         {documentTitleSignal}
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 74 |       </h1> */}
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 75 |
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 76 |       <Suspense>
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.042-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 77 |         <Outlet />
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 78 |       </Suspense>
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   > 79 |     </AppLayout>
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :        | ^^^^^^^^^^^^^^^^^
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     80 |   );
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :     81 | }
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:21:09.043-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 1 error. Watching for file changes.
+2025-03-24T14:21:24.786-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:21:24 [vite] (client) hmr update /views/@layout.tsx
+2025-03-24T14:21:25.431-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:21:25.431-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:21:55.630-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:21:55 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:21:56.559-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:21:56.559-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:21:59.389-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:21:59 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:23:33.966-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:23:33 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:23:35.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:23:35.038-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:24:58.234-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:24:58 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:26:01.354-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:26:01 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:26:02.222-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:26:02.223-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:27:09.172-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:27:09 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T14:27:09.928-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:27:09.928-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:27:21.737-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:27:21 [vite] (client) hmr update /views/@layout.tsx
+2025-03-24T14:27:22.387-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:27:22.387-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:30:22.303-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:30:22.303-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:30:23.029-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:30:23.029-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:30:28.875-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:30:28.875-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:31:39.034-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:31:39 [vite] (client) hmr update /static/utils/dialog-utils.tsx
+2025-03-24T14:31:39.728-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:31:39.729-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:32:05.746-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:32:05 [vite] (client) hmr update /static/utils/dialog-utils.tsx
+2025-03-24T14:32:57.349-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:32:57 [vite] (client) hmr update /static/utils/dialog-utils.tsx
+2025-03-24T14:32:58.002-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:32:58.002-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:33:40.484-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:33:40 [vite] (client) hmr update /static/utils/dialog-utils.tsx
+2025-03-24T14:33:41.103-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T14:33:41.103-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T14:34:02.401-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 14:34:02 [vite] (client) hmr update /static/utils/dialog-utils.tsx
+2025-03-24T14:56:26.484-03:00  INFO 26712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-24T14:56:26.489-03:00  INFO 26712 --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24T14:56:26.494-03:00  INFO 26712 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-24T14:56:26.499-03:00  INFO 26712 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24T14:56:26.504-03:00  INFO 26712 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-24T14:56:26.509-03:00  INFO 26712 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-24T14:56:26.704-03:00  INFO 26712 --- [restartedMain] com.verified.template.Application        : Starting Application using Java 21.0.3 with PID 26712 (C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\target\classes started by PC-WEINZER in c:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template)
+2025-03-24T14:56:26.704-03:00  INFO 26712 --- [restartedMain] com.verified.template.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T14:56:26.977-03:00  INFO 26712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24T14:56:26.989-03:00  INFO 26712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-03-24T14:56:27.100-03:00  INFO 26712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-24T14:56:27.101-03:00  INFO 26712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-24T14:56:27.101-03:00  INFO 26712 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-24T14:56:27.146-03:00  INFO 26712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-24T14:56:27.146-03:00  INFO 26712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 438 ms
+2025-03-24T14:56:27.189-03:00  INFO 26712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing AtmosphereFramework
+2025-03-24T14:56:27.792-03:00  INFO 26712 --- [restartedMain] c.v.f.s.VaadinServletContextInitializer  : Search for subclasses and classes with annotations took 541 ms
+2025-03-24T14:56:27.803-03:00  INFO 26712 --- [restartedMain] c.v.b.d.startup.DevModeStartupListener   : Starting dev-mode updaters in C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template folder.
+2025-03-24T14:56:27.817-03:00  INFO 26712 --- [restartedMain] c.v.f.s.f.s.FullDependenciesScanner      : Visited 110 classes. Took 12 ms.
+2025-03-24T14:56:28.025-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-1] c.v.f.s.frontend.TaskUpdatePackages      : Skipping `npm install` because the frontend packages are already installed in the folder 'C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules' and the hash in the file 'C:\Users\PC-WEINZER\Desktop\Devs\Projetos\verified template\verified template\node_modules\.vaadin\vaadin.json' is the same as in 'package.json'
+2025-03-24T14:56:28.029-03:00  INFO 26712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24T14:56:28.034-03:00  INFO 26712 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-24T14:56:28.049-03:00  INFO 26712 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24T14:56:28.050-03:00  INFO 26712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-24T14:56:28.063-03:00  INFO 26712 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6144bc2c
+2025-03-24T14:56:28.063-03:00  INFO 26712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-24T14:56:28.070-03:00  INFO 26712 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 15.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24T14:56:28.125-03:00  INFO 26712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24T14:56:28.145-03:00  WARN 26712 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists responses.enterprise alter column logo set data type varchar(255)" via JDBC [ERROR: value too long for type character varying(255)]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists responses.enterprise alter column logo set data type varchar(255)" via JDBC [ERROR: value too long for type character varying(255)]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:334) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.verified.template.Application.main(Application.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(255)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.4.jar:42.7.4]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	... 40 common frames omitted
+
+2025-03-24T14:56:28.157-03:00  INFO 26712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24T14:56:28.230-03:00  WARN 26712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24T14:56:28.332-03:00  INFO 26712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-24T14:56:28.546-03:00  INFO 26712 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-24T14:56:28.546-03:00  INFO 26712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-24T14:56:28.547-03:00  INFO 26712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-24T14:56:28.554-03:00 ERROR 26712 --- [ForkJoinPool.commonPool-worker-18] c.v.b.d.viteproxy.ViteWebsocketProxy     : Error creating Vite proxy connection
+
+java.util.concurrent.CompletionException: java.net.ConnectException: Cannot assign requested address: connect
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1189) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2341) ~[na:na]
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:458) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:454) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372) ~[na:na]
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:444) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:346) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: Cannot assign requested address: connect
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1028) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.Http1Exchange.sendHeadersAsync(Http1Exchange.java:312) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$8(Exchange.java:567) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.Exchange.checkFor407(Exchange.java:447) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl0$9(Exchange.java:571) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372) ~[na:na]
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:571) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:423) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:415) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:413) ~[java.net.http:na]
+	... 12 common frames omitted
+Caused by: java.net.BindException: Cannot assign requested address: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:596) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:880) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 23 common frames omitted
+
+2025-03-24T14:56:28.577-03:00  INFO 26712 --- [http-nio-8080-exec-1] c.vaadin.flow.spring.SpringInstantiator  : The number of beans implementing 'I18NProvider' is 0. Cannot use Spring beans for I18N, falling back to the default behavior
+2025-03-24T14:56:30.432-03:00  INFO 26712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-24T14:56:30.440-03:00  INFO 26712 --- [restartedMain] com.verified.template.Application        : Started Application in 3.782 seconds (process running for 4945.444)
+2025-03-24T14:56:30.442-03:00  INFO 26712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-24T14:56:30.813-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-1] c.v.f.s.frontend.TaskCopyFrontendFiles   : Copying frontend resources from jar files ...
+2025-03-24T14:56:30.890-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-1] c.v.f.s.frontend.TaskCopyFrontendFiles   : Visited 22 resources. Took 76 ms.
+2025-03-24T14:56:31.027-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-1] c.v.b.devserver.AbstractDevServerRunner  : Reusing Vite running at http://127.0.0.1:58592
+2025-03-24T14:56:31.032-03:00  INFO 26712 --- [ForkJoinPool.commonPool-worker-17] c.v.b.d.DevModeHandlerManagerImpl        : Application running at http://localhost:8080/
+2025-03-24T15:02:22.659-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 15:02:22 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T15:02:23.604-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T15:02:23.605-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T15:02:26.420-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 15:02:26 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T15:02:27.206-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T15:02:27.206-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T15:02:34.790-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 15:02:34 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T15:02:35.607-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T15:02:35.607-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T15:03:14.160-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 15:03:14 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T15:03:14.991-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T15:03:14.991-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T15:03:32.447-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 15:03:32 [vite] (client) hmr update /views/create/create-sheet.tsx
+2025-03-24T15:03:33.311-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T15:03:33.311-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T15:30:22.735-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T15:30:22.735-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2025-03-24T15:30:23.451-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2025-03-24T15:30:23.453-03:00  INFO 26712 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.

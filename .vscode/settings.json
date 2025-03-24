@@ -1,1 +1,8 @@
-{"lit-plugin.strict":true,"java.compile.nullAnalysis.mode":"automatic","java.configuration.updateBuildConfiguration":"automatic","typescript.preferences.includePackageJsonAutoImports":"on"}
+{
+    "lit-plugin.strict": true,
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "typescript.preferences.includePackageJsonAutoImports": "on",
+    "totvsLanguageServer.welcomePage": false,
+    "totvsLanguageServer.editor.linter.includes": "C:\\TOTVS\\Protheus2310\\Protheus\\include"
+}

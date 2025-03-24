@@ -4,8 +4,8 @@ import { Button, Notification, TextField } from '@vaadin/react-components';
 import { HelloWorldService } from 'Frontend/generated/endpoints.js';
 
 export const config: ViewConfig = {
-  menu: { order: 0, icon: 'line-awesome/svg/globe-solid.svg' },
-  title: 'Hello World',
+  menu: { order: 0, icon: 'line-awesome/svg/home-solid.svg' },
+  title: 'Início',
 };
 
 export default function HelloWorldView() {
@@ -14,7 +14,7 @@ export default function HelloWorldView() {
   return (
     <>
       <section className="flex p-m gap-m items-end">
-        <TextField
+        {/* <TextField
           label="Your name"
           onValueChanged={(e) => {
             name.value = e.detail.value;
@@ -27,7 +27,9 @@ export default function HelloWorldView() {
           }}
         >
           Say hello
-        </Button>
+        </Button> */}
+        <Button theme="large">Large</Button>
+
       </section>
     </>
   );

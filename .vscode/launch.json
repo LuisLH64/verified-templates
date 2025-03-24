@@ -16,6 +16,17 @@
       "name": "Attach to Application started using Maven",
       "hostName": "localhost",
       "port": 5247
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<my-app>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.verified.template.Application",
+      "console": "internalConsole",
+      "projectName": "my-app",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
